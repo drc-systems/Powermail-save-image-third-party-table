@@ -1,0 +1,18 @@
+plugin.tx_powermail.settings.setup {
+    finishers {
+        1 {
+          class = Vendor\Ext\Finisher\AddImageFinisher
+          config {
+             # set pid.            
+             pid = TEXT
+             pid.value = 79 // Here
+             
+             #set powermail fields title
+             field_name = Name
+             field_place = Place
+             field_email = E-Mail
+             field_message = Message
+          }
+        }
+    }
+}
