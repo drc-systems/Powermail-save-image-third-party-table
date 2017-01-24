@@ -74,8 +74,8 @@ class AddImageFinisher extends AbstractFinisher
 	 */
 	protected function createFileReferenceFromFalFileObject(\TYPO3\CMS\Core\Resource\File $file, $resourcePointer = null, $obj)
 	{
-			$fileObject = $this->resourceFactory->getFileObject($file->getUid());
-			$newId = uniqid('NEW_');
+		$fileObject = $this->resourceFactory->getFileObject($file->getUid());
+		$newId = uniqid('NEW_');
 	        $data = [];
 	        $data['sys_file_reference'][$newId] = [
 	            'table_local' => 'sys_file',
