@@ -133,6 +133,7 @@ class AddImageFinisher extends AbstractFinisher
 		);
 		
 		if ($fields->count()) {
+			//Get Powermail Fields Title
 			$name = $this->configuration['field_name'];
 			$place = $this->configuration['field_place'];
 			$email = $this->configuration['field_email'];
