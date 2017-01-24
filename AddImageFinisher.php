@@ -80,12 +80,12 @@ class AddImageFinisher extends AbstractFinisher
         $data['sys_file_reference'][$newId] = [
             'table_local' => 'sys_file',
             'uid_local' => $fileObject->getUid(),
-            'tablenames' => 'Third party table',
+            'tablenames' => 'Third party table name',
             'uid_foreign' => $obj->getUid(),
             'fieldname' => 'image',
             'pid' => $this->configuration['pid']['value'],
         ];
-        $data['Third party table'][$obj->getUid()] = [
+        $data['Third party table name'][$obj->getUid()] = [
             'image' => $newId,
         ];
         // Get an instance of the DataHandler and process the data
